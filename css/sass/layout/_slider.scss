@@ -1,0 +1,37 @@
+#main-slider {
+    position: relative;
+    top: -67px;
+        .carousel {
+            .carousel-inner {
+                .item.active {
+                    opacity: 1;
+                    @include transitions ();
+                    z-index: 1;
+                    color: $blanco;
+                }
+                .item:first-child {
+                    top: auto;
+                    position: relative;
+                }
+                .item {
+                    background-position: 50%;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    left: 0 !important;
+                    opacity: 0;
+                    top: 0;
+                    position: absolute;
+                    width: 100%;
+                    display: block !important;
+                    height: auto;
+                    text-align: center;
+                    color: #1C8E1B;
+                    @include transitions ();
+                    img {
+                    width: 100%;
+                    border: 10px solid $blanco;
+                }
+            }
+        }
+    }
+}

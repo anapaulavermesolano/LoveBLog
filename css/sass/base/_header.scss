@@ -1,0 +1,77 @@
+#header_area {
+	.navbar-default {
+    	background-color: $blanco;
+    	border-color: $blanco;
+    	padding: 7px 0;
+    	margin: 0;
+	}
+	.navbar-nav {
+		padding: 14px 0;
+		li > a {
+    		@include titulos(15px, normal, 10px, 'bebas', $plomo);
+    		padding: 10px 15px;
+    		&:hover, &:focus {
+    			background-color: $blanco;
+    			color: $coral;
+    		}
+		}
+		.active {color: $coral;}
+	}
+	.navbar-toggle {
+    	border: 1px solid $coral;
+    	background-color: $coral;
+    	margin-top: 22px;
+    	box-shadow: 2px 2px 7px $coral;
+    	.icon-bar {
+    		background-color: $palo-rosa;
+		}
+	}
+	.navbar-collapse {
+		border-top: 0;
+	}
+	.navbar-brand {
+		padding: 3px 3px 3px 30px;
+		letter-spacing: -3px;
+		h1 {
+			@include titulos(40px, normal, 16px, 'bebas', $coral);
+			span {
+				color: $palo-rosa;
+			}
+		}
+	&:hover, &:focus {
+		background-color: $blanco;
+	    }
+	}
+}
+
+.line {
+		margin-top: 30px;
+		h3 {
+			background: url("../images/heading-bg.png") repeat-x scroll 0 0 rgba(0, 0, 0, 0);
+		    line-height: 20px;
+		    margin: 0 0 30px 120px;
+    		@include titulos(18px, normal, 0px, 'bebas', $coral);
+			span {
+				margin-left: -120px;
+			}
+		}
+}
+
+.box-palo-rosa {
+    height: 150px;
+    display: block;
+    position: relative;
+    z-index: -10;
+    background-color: $palo-rosa;
+}
+
+.box-coral-top {
+        position: relative;
+        top: -59px;
+        @include boton($coral, 7px, $blanco, 0, 10px solid $blanco);
+        height: 59px;
+        @include borde-none(0, 0, 15px solid $blanco, 15px solid $blanco);
+        h2 {
+        	@include titulos(25px, normal, 5px, 'bebas', $blanco);
+        }
+}

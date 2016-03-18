@@ -1,0 +1,19 @@
+#single {
+	.row {
+		margin-bottom: 50px;
+		padding: 12px;
+		p {
+			@include titulos(15px, normal, 7px, sans-serif, $text);
+			padding-right: 30px;
+		}
+		.border-left {
+			padding: 30px;
+			p  {
+				@include borde-none(0, 0, 0, 10px solid $coral);
+				@include titulos(15px, normal, 7px, sans-serif, $coral);
+				padding-left: 15px;
+			}
+		}
+	}
+}
+    
