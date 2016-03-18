@@ -1,0 +1,76 @@
+#blog {
+	.row {
+		padding: 13px;
+		.blog {
+			position: relative;
+			img {
+				width: 100%;
+			}
+	    }
+		h2 {
+			@include titulos(28px, normal, 10px, 'bebas', $coral);
+		}
+		h4 {
+			@include titulos(15px, normal, 17px, 'bebas', $coral);
+		}
+		p{
+			@include titulos(15px, normal, 10px, sans-serif, $plomo);
+		}
+		p.parrafo {
+			@include titulos(15px, normal, 20px, sans-serif, $text);
+		}
+		.line-bg {
+			background: url("../images/post_border_bg.png") repeat-x scroll 0 0 rgba(0, 0, 0, 0);
+			margin: 50px auto;
+			height: 15px;
+		}
+		.comilla {
+			background: url("../images/quote_bg.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+			padding: 30px;
+			position: relative;
+			img.img-responsive {
+				 width: 30px;
+				 height: 30px;
+				 position: absolute;
+				 top: 20px;
+			}
+			p{
+				@include titulos(18px, normal, 0px, sans-serif, $text);
+				padding-left: 40px;
+			}
+		}
+		.http {
+				@include titulos(12px, normal, 10px, sans-serif, $plomo);
+		}
+		.some {
+				position: relative;
+				padding: 10px;
+				p { @include titulos(15px, normal, 10px, sans-serif, $text);}
+		}
+		.tres {
+			margin-bottom: 30px;
+			.cubos {
+				@include boton($coral, 14px, $blanco, 7px, 0);
+				width: 40px;
+				height: 40px;
+				display: inline-block;
+				text-align: center;
+				&:hover{
+					background: $palo-rosa;
+				}
+			}
+		}
+	}
+}
+
+.absolute {
+	width: 57px !important;
+	height: 57px;
+	position: absolute;
+}
+.icon1, .icon2, .icon3, .icon4  {
+	@include left( 0, -72px);
+}
+.icon5 {
+	@include left( -70px, -72px);			
+}

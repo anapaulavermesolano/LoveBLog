@@ -1,0 +1,50 @@
+//Mixins
+
+@mixin titulos($fsize, $fw, $mtop, $family, $color) {
+    font-size: $fsize;
+    font-weight: $fw;
+    margin-top: $mtop;
+    font-family: $family, sans-serif;
+    color: $color;
+}
+
+@mixin transitions() {
+    -webkit-transition: opacity ease-in-out 500ms;
+    -moz-transition: opacity ease-in-out 500ms;
+    -o-transition: opacity ease-in-out 500ms;
+    transition: opacity ease-in-out 500ms
+}
+
+@mixin border-radius($radius) {
+    -Webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+
+@mixin section($color, $textcolor, $align) {
+    background-color: $color;
+    color: $textcolor;
+    text-align: $align;
+}
+
+@mixin boton($bgbtn, $pdbtn, $colorbtn, $mgbtn, $borderbtn) {
+    background-color: $bgbtn;
+    padding: $pdbtn;
+    color: $colorbtn;
+    margin: $mgbtn;
+    border: $borderbtn;
+    font-family: 'bebas';
+}
+
+@mixin borde-none($btop, $bbottom, $bright, $bleft) {
+    border-top: $btop;
+    border-bottom: $bbottom;
+    border-right: $bright;
+    border-left: $bleft;
+}
+
+@mixin left( $top, $left) {
+    top: $top;
+    left: $left;
+}

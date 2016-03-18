@@ -1,0 +1,28 @@
+.fondo-coral {
+	footer {
+		background-color: $palo-rosa;
+		.row {
+			position: relative;
+        	@include boton($coral, 7px, $blanco, 0, 10px solid $blanco);
+        	@include borde-none(0, 0, 15px solid $blanco, 15px solid $blanco);
+			h2 {
+				@include titulos(28px, normal, 30px, 'bebas', $blanco);
+			}
+			p.one {
+				@include titulos(15px, normal, 10px, sans-serif, $blanco);
+				margin-bottom: 0;
+			}
+			p.two {
+				@include titulos(15px, normal, 35px, sans-serif, $blanco);
+			}
+			p {
+				@include titulos(15px, normal, 0px, sans-serif, $blanco);
+				padding-right: 55px;
+			}
+			img {
+				margin: 30px 0;
+			}
+		}
+		
+	}
+}

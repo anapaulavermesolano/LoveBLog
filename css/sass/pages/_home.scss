@@ -1,0 +1,39 @@
+#index {
+	.media {
+		h4 {
+			@include titulos(18px, normal, 0px, 'bebas', $coral);
+			line-height: 30px;	
+		}
+		img {
+			padding: 2px 10px 2px 5px;
+		}
+	}
+	p {
+		@include titulos(15px, normal, 5px, Sans-Serif, $gray);
+	}
+	button {
+		@include boton($coral, 5px, $blanco,15px 0 20px 0, none);
+	}
+    .row {
+    	padding: 12px 25px;
+		.foto {
+			position: relative;
+			margin-top: 20px;
+			img {
+				width: 100%;
+			}
+		}
+		.text {
+			border: 1px solid $borde;
+			border-top: none;
+			padding: 7px 24px 0 24px;
+			margin: 10px auto 30px;
+			h3 {
+				@include titulos(21px, normal, 0px, 'bebas', $plomo);
+			}
+			h5 {
+				@include titulos(14px, normal, 0px, 'bebas', $coral);
+			}
+		}
+    }
+}
